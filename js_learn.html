@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;}
+    .wrap{width: 1200px;margin: 0 auto;padding-top: 30px;}
+    .logo img{transition: all .4s;}
+</style>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <img src="images/js_learn/pl.png" alt="">
+                <h2>Mozilla is cool</h2>
+                <button>user</button>
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+    var logoimg = document.querySelector('.logo img');
+        logoimg.onclick = function () {
+            var mySrc = logoimg.getAttribute('src');
+            if (mySrc === 'images/js_learn/pl.png') {
+                logoimg.setAttribute('src','images/js_learn/yan.png');
+            } else {
+                logoimg.setAttribute('src','images/js_learn/pl.png')
+            }
+        }
+    var mybutton = document.querySelector('button');
+    var myheading = document.querySelector('h2')
+    function setUserName(){
+        var myname = prompt('请输入你的名字');
+        localStorage.setItem('name',myname);
+        myheading.innerHTML('欢迎您！' + myname);
+    }
+    if(!localStorage.getItem('name')){
+        setUserName();
+    } else {
+        var storedName = localStorage.getItem('name');
+        myheading.innerHTML = '欢迎您！' + storedName;
+    }
+    mybutton.onclick = function(){
+        setUserName();
+    }
+</script>
+</html>
