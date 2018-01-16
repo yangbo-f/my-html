@@ -1,0 +1,18 @@
+
+.banner img{width: 100%;display: block;}
+
+.title h2{font-size: 26px;padding-left: 30px;background: url(../images/public/pl.png) no-repeat 0 center;background-size: 25px;margin: 40px 0 30px;color: #fff;}
+
+.section1{background: url(../images/message/bg.webp) no-repeat;padding: 1px 20px 30px;box-sizing: border-box;margin-top: 30px;}
+.section1 .list{margin-bottom: 20px;color: #fff;}
+.section1 .list>img{display: block;margin-bottom: 2px;}
+.section1 .list>span{font-size: 16px;line-height: 1.6;background: rgb(0, 0, 0,.2);}
+.section1 .list .fen{margin-top: 10px;}
+.section1 .list .fen img{width: 25px;float: left;margin-right: 5px;}
+.section1 .list .fen span{display: block;float: left;line-height: 25px;height: 25px;font-size: 16px;}
+
+
+
+.foot{margin-top: 60px;}
+
+

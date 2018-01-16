@@ -1,0 +1,30 @@
+
+
+
+
+.title h2{font-size: 26px;padding-left: 30px;background: url(../images/public/yan.png) no-repeat 0 center;background-size: 25px;margin: 40px 0 30px;}
+
+
+
+.banner img{width: 100%;}
+
+.live .box{float: left;width: 30.6%;margin: 0 1% 30px;}
+.live .box .pic{position: relative;}
+.live .box .pic img{width: 100%;transition: all .4s;}
+.live .box .pic .wz{position: absolute;top: 0;right: 0;bottom: 0;left: 0;background: rgba(0, 0, 0, .5);transition: all .4s;opacity: 0;;}
+.live .box .pic .wz p{font-size: 20px;color: #fff;position: relative;top: 50%;text-align: center;transition: all .8s;opacity: 0;}
+.live .box .pic:hover img{transform: scale(.9)}
+.live .box .pic:hover .wz{opacity: 1;}
+.live .box .pic:hover .wz p{opacity: 1;}
+.live .box .txt{padding: 15px;}
+.live .box .txt p{font-size: 16px;height: 30px;line-height: 30px;margin-bottom: 5px;}
+.live .box .txt p span{display: block;float: left;width: 60px;height: 30px;margin-right: 50px;background: #ffb723;border-radius: 10px 5px 5px 10px;text-align: center;color: #fff;transition: all .4s;cursor: pointer;}
+.live .box .txt p:hover span{background: #5473f0;}
+
+
+
+
+
+
+.foot{height: 30px;background: #f7f7f7;padding: 20px 0;margin-top: 30px;}
+.foot p{text-align: center;font-size: 14px;line-height: 30px;}

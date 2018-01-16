@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/**{transition: all 0.1s linear;-webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear;-o-transition: all 0.1s linear;}*/
+
+/*必有*/
+html {  font-size: 62.5%; height: 100%;}
+body {  font-size: 14px; font-size: 1.4rem;  color: #232323;  font-family: "Microsoft YaHei", Arial, sans-serif ;  -webkit-tap-highlight-color: transparent;}
+input,textarea{ font-family:"Microsoft YaHei", Arial, sans-serif; font-size:12px; font-size:1.2rem;  border:none;padding: 0;margin: 0;outline:none;}
+input[type="button"], input[type="submit"], input[type="reset"],input[type="text"]  ,button{ border-radius: 0;  -webkit-appearance: none;  padding: 0;margin: 0; outline: 0;}
+select{-webkit-appearance:none; appearance:none;}
+a,body,div,em,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,label,li,menu,nav,p,section,span,strong,ul {  margin: 0;  padding: 0;  border: none;  word-wrap: break-word; font-weight:normal;}
+li,ol,ul {  list-style: none;  }
+img {border:none;}
+a { text-decoration: none;  color: #333;  -webkit-tap-highlight-color: transparent;  tap-highlight-color: transparent;  -webkit-focus-ring-color: transparent;  focus-ring-color: transparent;}
+/*左右浮动（class名根据自己习惯定义）*/
+.lt {float: left; }
+.rt {float: right;}
+/*清除浮动1*/
+.clear {clear: both;}
+/*清除浮动2*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+/*input placeholder字体颜色*/
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  color: #999;}
+::-moz-placeholder { /* Mozilla Firefox 19+ */  color: #999;}
+input:-ms-input-placeholder{  color: #999; }
+input::-webkit-input-placeholder{  color: #999;}
+
+/*安全范围（页面主题内容宽度，也是主体所在的范围）*/
+.wrap{width: 1200px;margin: 0 auto;}
+
+/* head start*/
+.head .logo{width: 160px;padding-top: 7px;}
+.head .logo img{width: 100%;}
+.head .nav li{float: left;padding: 25px 0;font-size: 18px;width: 110px;text-align: center;transition: all .4s;-webkit-transition: all .4s;-moz-transition: all .4s;-o-transition: all .4s;}
+.head .nav li a{padding: 5px;display: block;font-weight: bold;transition: all .4s;-webkit-transition: all .4s;-moz-transition: all .4s;-o-transition: all .4s;}
+.head .nav li:hover a{color: #5473f0;}
+.head .nav li.active a{color: #5473f0;}
+.head .nav li:hover,.head .nav li.active{background: url(../images/public/nav_bg.png) center bottom no-repeat;}
+/* head end */
+
+/* foot start */
+.foot{height: 30px;background: #f7f7f7;padding: 20px 0;}
+.foot p{text-align: center;font-size: 14px;line-height: 30px;}
+
+@media(max-width:1219px){
+    .wrap{width: 90%;}
+    
+}
+@media(max-width:1024px){
+
+}
+@media(max-width:767px){
+    .wrap{width: 96%;}
+	
+}
